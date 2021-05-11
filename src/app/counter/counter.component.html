@@ -1,0 +1,23 @@
+<div class="container counter-container">
+    <div class="row">
+                <app-count-down-timer (pausedTime)="getPauseTimerValue($event)" 
+                [intialInput]= "IntialValue"  
+                [receiveParentTimer]= "getTimer"
+                [resetCounter]= "resetValue"
+                [inputValueCounter]= inputValueChanges></app-count-down-timer>
+                <app-reset-counter 
+                [pauseTimeCounter]="pauseClickTime" 
+                (startClicksCount)="startCounts($event)" 
+                (pauseClicksCount)="pauseCounts($event)" 
+                (inputFieldChange)="onInputFieldChange($event)" 
+                (resetCounterTime)="resetConter($event)" 
+                (timerEmitttedValue)="getTimerValue($event)"
+                (startDateTime)="getStartDateTime($event)" 
+                >
+            </app-reset-counter>
+            </div>
+    <div class="row">
+            <app-counter-log [startTime]="startDateTimes"></app-counter-log>
+            <app-start-pause [startCounter]="startClicks" [pausedCounter]="pauseClicks" [resetCounter]="resetClicks"></app-start-pause>
+    </div>
+</div>

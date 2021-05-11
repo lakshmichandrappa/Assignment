@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row" (scroll)="scrollHandler($event)">
+        <div class="col-md-4 block-item" *ngFor="let block of item; let i=index">
+           <button appScroll type="button" class="btn btn-primary item-button" (click)="productSelected($event, i)">Click {{ i + 1 }}</button>
+        </div>
+    </div>
+</div>

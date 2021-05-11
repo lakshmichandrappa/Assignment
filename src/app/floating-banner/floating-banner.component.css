@@ -1,0 +1,30 @@
+div {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block1{
+    height: 300px;
+    width: 500px;
+}
+.block2{
+    height: 250px;
+    width: 450px;
+}
+.block3{
+    height: 200px;
+    width: 400px;
+}
+.block4{
+    height: 150px;
+    width: 350px;
+}
+.block5{
+    height: 100px;
+    width: 300px;
+}
+.block6{
+    height: 50px;
+    width: 250px;
+}

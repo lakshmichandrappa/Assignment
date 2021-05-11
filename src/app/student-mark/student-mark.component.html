@@ -1,0 +1,36 @@
+<div class="container">
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th [appSort]= details data-order="asc" data-name = "Name" data-type = "string">Name</th>
+                <th [appSort]= details data-order="asc" data-name = "Class" data-type = "number">Class</th>
+                <th [appSort]= details data-order="asc" data-name = "Section" data-type = "string">Section</th>
+                <th [appSort]= details data-order="asc" data-name = "Subj1" data-type = "number">Subject1</th>
+                <th [appSort]= details data-order="asc" data-name = "Subj2" data-type = "number">Subject2</th>
+                <th [appSort]= details data-order="asc" data-name = "Subj3" data-type = "number">Subject3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let detail of details">
+                <td>
+                    {{ detail.Name}}
+                </td>
+                <td>
+                    {{ detail.Class}}
+                </td>
+                <td>
+                    {{ detail.Section}}
+                </td>
+                <td>
+                    {{ detail.Subj1}}
+                </td>
+                <td>
+                    {{ detail.Subj2}}
+                </td>
+                <td>
+                    {{ detail.Subj3}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

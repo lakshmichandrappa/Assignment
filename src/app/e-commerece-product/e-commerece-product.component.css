@@ -1,0 +1,39 @@
+.main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.menu-row{
+    border: 1px solid black;
+    margin: 5% 0 5% 0;
+}
+.button-group {
+    float: right;
+    margin: 3rem;
+}
+.icons{
+    color: black;
+}
+.sample-button{
+    float: right;
+    margin: 3rem;
+}
+.content-block{
+    margin: 1rem;
+}
+.products {
+    display: flex;
+}
+.product-block{
+    border: 1px solid blue;
+    margin: 0 0 2rem 5rem;
+    height: 100px;
+    align-items: center ;
+    justify-content: center;
+}
+
+.product-block-list{
+    border: 1px solid blue;
+    margin-bottom: 1rem;
+    height: 30px;
+}

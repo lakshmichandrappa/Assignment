@@ -1,0 +1,14 @@
+
+<div class="restart">
+    <label>Enter Timer Limit: </label>
+    <input type="number" [(ngModel)]="getTimerValue" (ngModelChange)="dataChanged($event)" />
+    <br />
+    <div class="start-pause-button">
+        <button type="button" (click)="emitTimmer(getTimerValue)">Start/Pause</button>
+        <button type="button" (click)="resetCounter()">Reset</button>
+    </div>
+<div class="pauseTime">
+    <p *ngFor = "let pauseTimes of pauseTime">Paused at {{ pauseTimes }}</p>
+</div>
+</div>
+

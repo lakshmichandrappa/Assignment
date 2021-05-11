@@ -1,0 +1,36 @@
+<div class="container main">
+    <div class="menu-row">
+        <div class="row">
+            <!-- <button type="button" class="btn btn-primary sample-button">Sample Button</button> -->
+            <div class="dropdown sample-button">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Price: low to high
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li>Price1</li>
+                  <li>Price2</li>
+                </ul>
+              </div>
+            <div class="btn-group button-group">
+                <button type="button" class="btn btn-warning icons" (click)="gridView()"><span class="glyphicon glyphicon-th-large"></span></button>
+                <button type="button" class="btn btn-warning icons" (click)="listView()"><span class="glyphicon glyphicon-align-center"></span></button>
+            </div>
+        </div>
+        <div class="content-block">
+            <ng-container *ngIf="gridViews">
+                <div class="align-center  products product-block col-md-2" *ngFor="let product of products">
+                    <p>
+                        {{ product }}
+                    </p>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="!gridViews">
+                <div class="align-center products product-block-list col-md-12" *ngFor="let product of products">
+                    <p>
+                        {{ product }}
+                    </p>
+                </div>
+                </ng-container>
+        </div>
+    </div>
+
+</div>
